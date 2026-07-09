@@ -2,13 +2,10 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faDiscord,
-  faGithub,
   faPatreon,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   Coffee,
-  Bug,
   Palette,
   GitBranch,
   Type,
@@ -37,34 +34,7 @@ type SocialLink = {
   special?: string;
 };
 
-const socialLinks: SocialLink[] = [
-  {
-    icon: faDiscord,
-    url: 'https://discord.gg/CyvBNNrSmb',
-    type: 'fontawesome',
-  },
-  {
-    icon: faGithub,
-    url: 'https://github.com/lingdojo/kana-dojo',
-    type: 'fontawesome',
-  },
-  {
-    icon: Bug,
-    url: 'https://tally.so/r/2E4rB9',
-    type: 'lucide',
-  },
-  {
-    icon: Coffee,
-    url: 'https://ko-fi.com/fujilearn',
-    type: 'lucide',
-    special: 'donate',
-  },
-  // {
-  //   icon: faPatreon,
-  //   url: 'https://www.patreon.com/fujilearn',
-  //   type: 'fontawesome'
-  // }
-];
+const socialLinks: SocialLink[] = [];
 
 const MobileBottomBar = () => {
   const { playClick } = useClick();
@@ -190,13 +160,9 @@ const MobileBottomBar = () => {
       </div>
 
       <div className='flex items-center gap-2 text-xs text-(--secondary-color)'>
-        <button
-          type='button'
-          className='hidden text-xs text-(--secondary-color) hover:cursor-pointer hover:text-(--main-color) lg:inline-block'
-          onClick={() => handleClick('https://ko-fi.com/fujilearn')}
-        >
-          made with ❤️ by the community
-        </button>
+        <span className='hidden text-xs text-(--secondary-color) lg:inline-block'>
+          made with ❤️ for Japanese learners
+        </span>
         <span className='hidden text-sm text-(--main-color) select-none lg:inline-block'>
           ~
         </span>

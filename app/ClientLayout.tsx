@@ -111,75 +111,12 @@ export default function ClientLayout({
   const pathname = usePathname();
 
   useEffect(() => {
-    const isDev = process.env.NODE_ENV === 'development';
-    const isPreviewDeployment =
-      process.env.NODE_ENV === 'production' &&
-      process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production';
-    const isTargetRoute = /\/(kana|kanji|vocabulary)(\/|$)/.test(pathname);
-    const isPreferencesRoute = /\/preferences(\/|$)/.test(pathname);
-    const isProgressRoute = /\/progress(\/|$)/.test(pathname);
-    const isBaseRoute =
-      pathname === '/' || pathname === '/en' || pathname === '/ja';
+    // Donation auto-popup disabled for FujiLearn.
     const donationLastPathKey = 'donation-modal-last-pathname';
-    const donationCycleCountKey = 'donation-modal-cycle-count';
-    const previousPathname =
-      typeof window !== 'undefined'
-        ? sessionStorage.getItem(donationLastPathKey)
-        : null;
-
-    if (isBaseRoute) {
-      if (typeof window !== 'undefined') {
-        sessionStorage.setItem(donationLastPathKey, pathname);
-      }
-      setIsDonationModalOpen(false);
-      return;
-    }
-
-    // TEMPORARILY COMMENTED OUT: auto-show on preferences in dev/preview
-    // if ((isDev || isPreviewDeployment) && isPreferencesRoute) {
-    //   if (typeof window !== 'undefined') {
-    //     sessionStorage.setItem(donationLastPathKey, pathname);
-    //   }
-    //   const timer = setTimeout(() => {
-    //     setIsDonationModalOpen(true);
-    //   }, 500);
-    //   return () => clearTimeout(timer);
-    // }
-
-    const cameFromHome =
-      previousPathname === '/' ||
-      previousPathname === '/en' ||
-      previousPathname === '/ja';
-
-    const shouldCycle =
-      (hasSeenWelcome && isTargetRoute && cameFromHome) ||
-      (hasSeenWelcome && (isPreferencesRoute || isProgressRoute));
-
-    if (shouldCycle) {
-      const nextCount =
-        Number(
-          typeof window !== 'undefined'
-            ? sessionStorage.getItem(donationCycleCountKey)
-            : null,
-        ) + 1;
-
-      if (typeof window !== 'undefined') {
-        sessionStorage.setItem(donationCycleCountKey, String(nextCount));
-        sessionStorage.setItem(donationLastPathKey, pathname);
-      }
-
-      if (nextCount % 2 === 0) {
-        const timer = setTimeout(() => {
-          setIsDonationModalOpen(true);
-        }, 500);
-        return () => clearTimeout(timer);
-      }
-      return;
-    }
-
     if (typeof window !== 'undefined') {
       sessionStorage.setItem(donationLastPathKey, pathname);
     }
+    setIsDonationModalOpen(false);
   }, [hasSeenWelcome, pathname]);
 
   useEffect(() => {

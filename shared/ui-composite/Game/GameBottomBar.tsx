@@ -1,6 +1,6 @@
 'use client';
 import React, { ReactNode, useEffect, useRef, useState } from 'react';
-import { CircleCheck, RotateCcw, Flag } from 'lucide-react';
+import { CircleCheck, RotateCcw } from 'lucide-react';
 import clsx from 'clsx';
 import { ActionButton } from '@/shared/ui/components/ActionButton';
 import { useClick } from '@/shared/hooks/generic/useAudio';
@@ -168,25 +168,7 @@ export const GameBottomBar = ({
               {frozenFeedbackContent}
             </span>
           </p>
-          <button
-            onClick={() => {
-              playClick();
-              window.open('https://tally.so/r/2E4rB9', '_blank', 'noopener');
-            }}
-            className='max-sm:hidden'
-          >
-            <Flag className='h-6 w-6 text-(--secondary-color) delay-0 hover:cursor-pointer hover:text-(--main-color)' />
-          </button>
         </div>
-        <button
-          onClick={() => {
-            playClick();
-            window.open('https://tally.so/r/2E4rB9', '_blank', 'noopener');
-          }}
-          className='sm:hidden'
-        >
-          <Flag className='h-6 w-6 text-(--secondary-color) delay-0 hover:cursor-pointer hover:text-(--main-color)' />
-        </button>
       </div>
 
       {/* Buttons Container: Full width on mobile, 50% on desktop */}

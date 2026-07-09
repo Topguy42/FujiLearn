@@ -10,14 +10,10 @@ import {
   Cookie,
   Sun,
   Moon,
-  Heart,
   Sparkle,
   FileDiff,
   CircleHelp,
-  Bug,
 } from 'lucide-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
 import clsx from 'clsx';
 import { useClick } from '@/shared/hooks/generic/useAudio';
 import { useThemePreferences } from '@/features/Preferences';
@@ -178,26 +174,10 @@ const MainMenu = () => {
               type='button'
               onClick={() => {
                 playClick();
-                window.open('https://tally.so/r/2E4rB9', '_blank', 'noopener');
-              }}
-              className={clsx(
-                'inline-flex sm:hidden',
-                'duration-250 hover:cursor-pointer hover:scale-105',
-                'active:scale-100 active:duration-225',
-                'fill-current text-(--secondary-color) hover:text-(--main-color)',
-              )}
-              aria-label='Report a bug'
-            >
-              <Bug size={32} fill='currentColor' />
-            </button>
-            <button
-              type='button'
-              onClick={() => {
-                playClick();
                 setTheme(theme === 'dark' ? 'light' : 'dark');
               }}
               className={clsx(
-                'hidden sm:inline-flex',
+                'inline-flex',
                 'duration-250 hover:cursor-pointer',
                 'active:scale-100 active:duration-225',
                 'text-(--secondary-color) hover:text-(--main-color)',
@@ -206,62 +186,6 @@ const MainMenu = () => {
             >
               {theme === 'dark' ? <Moon size={32} /> : <Sun size={32} />}
             </button>
-
-            <FontAwesomeIcon
-              icon={faDiscord}
-              size='2x'
-              className={clsx(
-                'duration-250 hover:cursor-pointer hover:scale-105',
-                'active:scale-100 active:duration-225',
-                'md:hidden',
-                'text-(--secondary-color) hover:text-(--main-color)',
-              )}
-              onClick={() => {
-                playClick();
-                window.open('https://discord.gg/CyvBNNrSmb', '_blank');
-              }}
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              size='2x'
-              className={clsx(
-                'duration-250 hover:cursor-pointer hover:scale-105',
-                'active:scale-100 active:duration-225',
-                'text-(--secondary-color) hover:text-(--main-color)',
-              )}
-              onClick={() => {
-                playClick();
-                window.open('https://github.com/lingdojo/kana-dojo', '_blank');
-              }}
-            />
-            <button
-              type='button'
-              onClick={() => {
-                playClick();
-                window.open('https://tally.so/r/2E4rB9', '_blank', 'noopener');
-              }}
-              className={clsx(
-                'hidden sm:inline-flex',
-                'duration-250 hover:cursor-pointer hover:scale-105',
-                'active:scale-100 active:duration-225',
-                ' text-(--secondary-color) hover:text-(--main-color)',
-              )}
-              aria-label='Report a bug'
-            >
-              <Bug size={32}  />
-            </button>
-            <Heart
-              size={32}
-              className={clsx(
-                'duration-250 hover:cursor-pointer hover:scale-105',
-                'active:scale-100 active:duration-225',
-                'animate-bounce fill-current text-red-500',
-              )}
-              onClick={() => {
-                playClick();
-                window.open('https://ko-fi.com/fujilearn', '_blank');
-              }}
-            />
           </div>
         </div>
         <Info />
