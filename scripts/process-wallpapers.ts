@@ -34,7 +34,7 @@ const MANIFEST_PATH =
 const BUILD_STATE_PATH = `${OUTPUT_DIR}/wallpaper-build-state.json`;
 const UPLOAD_PLAN_PATH = `${OUTPUT_DIR}/wallpaper-upload-plan.json`;
 const R2_ASSET_BASE_URL = (
-  process.env.WALLPAPER_ASSET_BASE_URL || 'https://assets.kanadojo.com'
+  process.env.WALLPAPER_ASSET_BASE_URL || 'https://assets.fujilearn.com'
 ).replace(/\/$/, '');
 const R2_WALLPAPER_PREFIX = (
   process.env.WALLPAPER_R2_PREFIX || 'wallpapers'

@@ -55,7 +55,7 @@ export async function generateMetadata({
   const resources = getResourcesBySubcategory(categoryId, subcategoryId);
   const resourceCount = resources.length;
 
-  const title = `Best ${subcategory.name} for Learning Japanese - ${resourceCount}+ Resources | KanaDojo`;
+  const title = `Best ${subcategory.name} for Learning Japanese - ${resourceCount}+ Resources | FujiLearn`;
   const description = `${subcategory.description} Discover ${resourceCount}+ curated ${subcategory.name.toLowerCase()} to help you learn Japanese effectively.`;
 
   return {
@@ -70,18 +70,18 @@ export async function generateMetadata({
       'japanese study resources',
     ],
     openGraph: {
-      title: `Best ${subcategory.name} for Learning Japanese | KanaDojo`,
+      title: `Best ${subcategory.name} for Learning Japanese | FujiLearn`,
       description,
-      url: `https://kanadojo.com/resources/${categoryId}/${subcategoryId}`,
+      url: `https://fujilearn.com/resources/${categoryId}/${subcategoryId}`,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Best ${subcategory.name} for Learning Japanese | KanaDojo`,
+      title: `Best ${subcategory.name} for Learning Japanese | FujiLearn`,
       description,
     },
     alternates: {
-      canonical: `https://kanadojo.com/resources/${categoryId}/${subcategoryId}`,
+      canonical: `https://fujilearn.com/resources/${categoryId}/${subcategoryId}`,
     },
   };
 }
@@ -143,15 +143,15 @@ export default async function SubcategoryPage({
   const availableFilters = getFilterOptions(subcategoryResources);
 
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://kanadojo.com' },
-    { name: 'Resources', url: 'https://kanadojo.com/resources' },
+    { name: 'Home', url: 'https://fujilearn.com' },
+    { name: 'Resources', url: 'https://fujilearn.com/resources' },
     {
       name: category.name,
-      url: `https://kanadojo.com/resources/${categoryId}`,
+      url: `https://fujilearn.com/resources/${categoryId}`,
     },
     {
       name: subcategory.name,
-      url: `https://kanadojo.com/resources/${categoryId}/${subcategoryId}`,
+      url: `https://fujilearn.com/resources/${categoryId}/${subcategoryId}`,
     },
   ];
 

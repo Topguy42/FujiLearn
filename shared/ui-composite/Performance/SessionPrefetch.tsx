@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-const PREFETCH_KEY = 'kanadojo_prefetch_v1';
+const PREFETCH_KEY = 'fujilearn_prefetch_v1';
 
 const PREFETCH_URLS = [
   '/data-kanji/decorations.json',

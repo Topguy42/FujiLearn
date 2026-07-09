@@ -69,7 +69,7 @@ const FontCard = memo(function FontCard({
             color: isSelected ? 'var(--card-color)' : 'var(--secondary-color)',
           }}
         >
-          かな道場
+          富士まなび
         </span>
       </p>
     </label>

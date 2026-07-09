@@ -17,7 +17,7 @@ const REPORT_PATH =
   process.env.WALLPAPER_UPLOAD_REPORT_PATH ||
   join(STAGING_DIR, 'wallpaper-upload-report.json');
 const VERIFY_DIR = join(STAGING_DIR, '.r2-verify');
-const R2_BUCKET = process.env.WALLPAPER_R2_BUCKET || 'kanadojo-wallpapers';
+const R2_BUCKET = process.env.WALLPAPER_R2_BUCKET || 'fujilearn-wallpapers';
 const CACHE_CONTROL =
   process.env.WALLPAPER_R2_CACHE_CONTROL ||
   'public, max-age=31536000, immutable';

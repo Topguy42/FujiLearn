@@ -4,11 +4,11 @@
  * Supported by: Bing, Yandex, Seznam.cz, Naver, and more
  */
 
-const SITE_URL = 'https://kanadojo.com';
+const SITE_URL = 'https://fujilearn.com';
 
 /**
  * Submit a single URL to IndexNow for instant indexing
- * @param url - Full URL to submit (must be kanadojo.com domain)
+ * @param url - Full URL to submit (must be fujilearn.com domain)
  * @returns Promise with submission result
  */
 export async function submitUrlToIndexNow(url: string): Promise<{
@@ -34,7 +34,7 @@ export async function submitUrlToIndexNow(url: string): Promise<{
 
 /**
  * Submit multiple URLs to IndexNow for instant indexing
- * @param urls - Array of full URLs to submit (must be kanadojo.com domain)
+ * @param urls - Array of full URLs to submit (must be fujilearn.com domain)
  * @returns Promise with submission result
  */
 export async function submitUrlsToIndexNow(urls: string[]): Promise<{

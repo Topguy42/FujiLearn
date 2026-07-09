@@ -5,7 +5,7 @@ import type {
   GauntletGameMode,
 } from '@/shared/ui-composite/Gauntlet/types';
 
-const STORAGE_KEY = 'kanadojo-gauntlet-stats';
+const STORAGE_KEY = 'fujilearn-gauntlet-stats';
 
 interface LifetimeTotals {
   totalSessions: number;

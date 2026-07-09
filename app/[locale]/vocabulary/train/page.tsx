@@ -28,15 +28,15 @@ export default function Train() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Vocabulary', url: 'https://kanadojo.com/vocabulary' },
-          { name: 'Training', url: 'https://kanadojo.com/vocabulary/train' },
+          { name: 'Home', url: 'https://fujilearn.com' },
+          { name: 'Vocabulary', url: 'https://fujilearn.com/vocabulary' },
+          { name: 'Training', url: 'https://fujilearn.com/vocabulary/train' },
         ]}
       />
       <CourseSchema
         name='Japanese Vocabulary Training'
         description='Build your Japanese vocabulary with words organized by JLPT levels. Interactive exercises with example sentences and translations.'
-        url='https://kanadojo.com/vocabulary/train'
+        url='https://fujilearn.com/vocabulary/train'
         skillLevel='Beginner to Advanced'
         learningResourceType='Interactive Vocabulary Training'
       />

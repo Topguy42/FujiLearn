@@ -690,7 +690,7 @@ const WelcomeModal = () => {
                             ` ${t('steps.fonts.default')}`}
                         </span>
                         <span className='ml-2 text-(--secondary-color)'>
-                          かな道場
+                          富士まなび
                         </span>
                       </p>
                     </button>
@@ -737,7 +737,7 @@ const WelcomeModal = () => {
                             ` ${t('steps.fonts.default')}`}
                         </span>
                         <span className='ml-2 text-(--secondary-color)'>
-                          かな道場
+                          富士まなび
                         </span>
                       </p>
                     </button>

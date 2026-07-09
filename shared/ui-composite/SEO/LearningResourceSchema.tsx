@@ -141,7 +141,7 @@ export function generateLearningResourceSchema(
  * <LearningResourceSchema
  *   name="Hiragana Practice Game"
  *   description="Interactive game to practice Hiragana characters"
- *   url="https://kanadojo.com/kana/train"
+ *   url="https://fujilearn.com/kana/train"
  *   learningResourceType="Game"
  *   educationalLevel={["Beginner", "Intermediate"]}
  *   teaches="Japanese Hiragana Characters"

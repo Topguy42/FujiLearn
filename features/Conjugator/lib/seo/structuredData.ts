@@ -14,7 +14,7 @@ import type { VerbInfo, ConjugationResult } from '../../types';
 // Constants
 // ============================================================================
 
-const BASE_URL = 'https://kanadojo.com';
+const BASE_URL = 'https://fujilearn.com';
 const CONJUGATE_PATH = '/conjugate';
 
 // ============================================================================
@@ -139,7 +139,7 @@ export function generateWebApplicationSchema(): Record<string, unknown> {
   return {
     '@type': 'WebApplication',
     '@id': `${BASE_URL}${CONJUGATE_PATH}#webapp`,
-    name: 'KanaDojo Japanese Verb Conjugator',
+    name: 'FujiLearn Japanese Verb Conjugator',
     alternateName: [
       'Japanese Verb Conjugator',
       'Free Japanese Conjugation Tool',
@@ -173,7 +173,7 @@ export function generateWebApplicationSchema(): Record<string, unknown> {
     ],
     author: {
       '@type': 'Organization',
-      name: 'KanaDojo',
+      name: 'FujiLearn',
       url: BASE_URL,
     },
     aggregateRating: {
@@ -217,7 +217,7 @@ export function generateHowToSchema(): Record<string, unknown> {
     '@id': `${BASE_URL}${CONJUGATE_PATH}#howto`,
     name: 'How to Conjugate Japanese Verbs',
     description:
-      'Step-by-step guide to conjugating Japanese verbs using KanaDojo',
+      'Step-by-step guide to conjugating Japanese verbs using FujiLearn',
     totalTime: 'PT1M',
     step: [
       {
@@ -363,7 +363,7 @@ function generateOrganizationSchema(): Record<string, unknown> {
   return {
     '@type': 'Organization',
     '@id': `${BASE_URL}#organization`,
-    name: 'KanaDojo',
+    name: 'FujiLearn',
     url: BASE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -373,7 +373,7 @@ function generateOrganizationSchema(): Record<string, unknown> {
     },
     description:
       'Free online Japanese learning platform featuring verb conjugation, Hiragana, Katakana, Kanji training, and vocabulary building',
-    sameAs: ['https://github.com/lingdojo/kanadojo'],
+    sameAs: ['https://github.com/lingdojo/fujilearn'],
   };
 }
 

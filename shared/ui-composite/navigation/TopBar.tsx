@@ -139,8 +139,8 @@ export default function TopBar() {
             onClick={() => playClick()}
             className='flex items-center gap-3 text-lg font-medium text-(--main-color) transition-opacity hover:opacity-80'
           >
-            <span className='text-3xl'>KanaDojo</span>
-            <span className='text-3xl text-(--secondary-color)'>かな道場</span>
+            <span className='text-3xl'>FujiLearn</span>
+            <span className='text-3xl text-(--secondary-color)'>富士まなび</span>
           </Link>
 
           {/* Navigation Links */}

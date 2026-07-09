@@ -5,7 +5,7 @@ import useAchievementStore, {
 import { useStatsStore } from '@/features/Progress';
 
 const FIRST_VISIT_ACHIEVEMENT_GATE_KEY =
-  'kanadojo-achievements-initial-visit-complete';
+  'fujilearn-achievements-initial-visit-complete';
 
 interface UseAchievementsReturn {
   checkForNewAchievements: () => Achievement[];

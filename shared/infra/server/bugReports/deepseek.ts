@@ -36,9 +36,9 @@ const CleanedBugReportSchema = z.object({
 const DEEPSEEK_TIMEOUT_MS = 12000;
 const DEEPSEEK_MODEL = 'deepseek-v4-flash';
 
-const DEEPSEEK_PROMPT = `You are formatting user-submitted bug reports for the KanaDojo GitHub issue tracker.
+const DEEPSEEK_PROMPT = `You are formatting user-submitted bug reports for the FujiLearn GitHub issue tracker.
 
-KanaDojo is a Japanese learning web app for Hiragana, Katakana, Kanji, Vocabulary, translation, and practice games.
+FujiLearn is a Japanese learning web app for Hiragana, Katakana, Kanji, Vocabulary, translation, and practice games.
 
 Your job:
 - Clean up the user's report.

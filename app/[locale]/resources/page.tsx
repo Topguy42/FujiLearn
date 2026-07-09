@@ -29,7 +29,7 @@ export async function generateMetadata({
   const totalCount = resources.length;
 
   const title =
-    'Best Japanese Learning Resources - Apps, Textbooks, YouTube & More | KanaDojo';
+    'Best Japanese Learning Resources - Apps, Textbooks, YouTube & More | FujiLearn';
   const description = `Discover ${totalCount}+ curated Japanese learning resources. Find the best apps, textbooks, YouTube channels, podcasts, games, and tools for learning Japanese at any level.`;
 
   return {
@@ -47,18 +47,18 @@ export async function generateMetadata({
       'japanese language resources',
     ],
     openGraph: {
-      title: 'Best Japanese Learning Resources | KanaDojo',
+      title: 'Best Japanese Learning Resources | FujiLearn',
       description,
-      url: 'https://kanadojo.com/resources',
+      url: 'https://fujilearn.com/resources',
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Best Japanese Learning Resources | KanaDojo',
+      title: 'Best Japanese Learning Resources | FujiLearn',
       description,
     },
     alternates: {
-      canonical: 'https://kanadojo.com/resources',
+      canonical: 'https://fujilearn.com/resources',
     },
   };
 }
@@ -108,8 +108,8 @@ export default async function ResourcesPage({
   const availableFilters = getFilterOptions(resources);
 
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://kanadojo.com' },
-    { name: 'Resources', url: 'https://kanadojo.com/resources' },
+    { name: 'Home', url: 'https://fujilearn.com' },
+    { name: 'Resources', url: 'https://fujilearn.com/resources' },
   ];
 
   const itemListSchema = generateItemListSchema(resources, locale);
@@ -126,13 +126,13 @@ export default async function ResourcesPage({
       <LearningResourceSchema
         name='Japanese Learning Resources Library'
         description={`Curated collection of ${resources.length}+ Japanese learning resources including apps, textbooks, YouTube channels, podcasts, games, and JLPT preparation materials.`}
-        url='https://kanadojo.com/resources'
+        url='https://fujilearn.com/resources'
         learningResourceType='Course'
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
         teaches='Japanese Language — Hiragana, Katakana, Kanji, Vocabulary, Grammar'
         isAccessibleForFree={true}
         inLanguage={['en', 'ja']}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FujiLearn', url: 'https://fujilearn.com' }}
       />
 
       {/* Page Content */}

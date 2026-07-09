@@ -34,7 +34,7 @@ export interface BreadcrumbSchemaOptions {
 /**
  * Base URL for the site
  */
-const BASE_URL = 'https://kanadojo.com';
+const BASE_URL = 'https://fujilearn.com';
 
 /**
  * Generates JSON-LD BreadcrumbList structured data from BlogPost

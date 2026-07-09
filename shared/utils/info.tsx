@@ -21,10 +21,10 @@ export default function translationGen(t: (key: string) => string) {
           </p>
           {/*         <p className='text-sm text-secondary'>
           Want to support an independent project built by the community, for the
-          community, and help KanaDojo continue growing? Then please consider
+          community, and help FujiLearn continue growing? Then please consider
           donating{' '}
           <Link
-            href='https://ko-fi.com/kanadojo'
+            href='https://ko-fi.com/fujilearn'
             target='_blank'
             className='underline'
           >

@@ -1,11 +1,11 @@
 import localforage from 'localforage';
 import type { TranslationEntry } from '../types';
 
-const STORAGE_KEY = 'kanadojo-translation-history';
+const STORAGE_KEY = 'fujilearn-translation-history';
 
 // Configure localforage instance for translation history
 const historyStore = localforage.createInstance({
-  name: 'kanadojo',
+  name: 'fujilearn',
   storeName: 'translation_history',
 });
 

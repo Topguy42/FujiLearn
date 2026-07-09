@@ -55,13 +55,13 @@ const socialLinks: SocialLink[] = [
   },
   {
     icon: Coffee,
-    url: 'https://ko-fi.com/kanadojo',
+    url: 'https://ko-fi.com/fujilearn',
     type: 'lucide',
     special: 'donate',
   },
   // {
   //   icon: faPatreon,
-  //   url: 'https://www.patreon.com/kanadojo',
+  //   url: 'https://www.patreon.com/fujilearn',
   //   type: 'fontawesome'
   // }
 ];
@@ -193,7 +193,7 @@ const MobileBottomBar = () => {
         <button
           type='button'
           className='hidden text-xs text-(--secondary-color) hover:cursor-pointer hover:text-(--main-color) lg:inline-block'
-          onClick={() => handleClick('https://ko-fi.com/kanadojo')}
+          onClick={() => handleClick('https://ko-fi.com/fujilearn')}
         >
           made with ❤️ by the community
         </button>

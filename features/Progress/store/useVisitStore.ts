@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import localforage from 'localforage';
 import { formatDate } from '../lib/streakCalculations';
 
-const STORAGE_KEY = 'kanadojo-visits';
+const STORAGE_KEY = 'fujilearn-visits';
 
 interface VisitState {
   visits: string[]; // Array of "YYYY-MM-DD" date strings

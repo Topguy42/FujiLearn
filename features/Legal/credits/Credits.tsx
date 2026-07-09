@@ -47,9 +47,9 @@ export default async function Credits() {
 
   const credits = `# Credits
 
-Thank you to everyone who has contributed to **KanaDojo** — maintainers, contributors, translators, and supporters.
+Thank you to everyone who has contributed to **FujiLearn** — maintainers, contributors, translators, and supporters.
 
-KanaDojo is what you see today thanks to everyone's work and suggestions. We'll keep making it **better**, and we hope you stay with us on this amazing adventure!
+FujiLearn is what you see today thanks to everyone's work and suggestions. We'll keep making it **better**, and we hope you stay with us on this amazing adventure!
 `;
 
   return (
@@ -105,7 +105,7 @@ KanaDojo is what you see today thanks to everyone's work and suggestions. We'll 
           <div className='mt-8 rounded-lg border border-(--border-color) bg-(--card-color) p-6'>
             <p className='mb-3 flex items-center gap-2 font-medium text-(--main-color)'>
               <Heart className='fill-current text-red-500 hover:text-red-500 motion-safe:animate-pulse' />
-              Support KanaDojo
+              Support FujiLearn
             </p>
             <p className='mb-4 text-sm text-(--secondary-color)'>
               Your support is really appreciated. Thank you!
@@ -114,7 +114,7 @@ KanaDojo is what you see today thanks to everyone's work and suggestions. We'll 
             <div className='flex flex-wrap gap-3'>
               <a
                 className='inline-flex items-center rounded-lg bg-(--main-color) px-4 py-2 text-sm font-medium text-(--background-color) transition-opacity hover:opacity-90'
-                href='https://ko-fi.com/kanadojo'
+                href='https://ko-fi.com/fujilearn'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -123,7 +123,7 @@ KanaDojo is what you see today thanks to everyone's work and suggestions. We'll 
 
               <a
                 className='inline-flex items-center rounded-lg border-2 border-(--main-color) px-4 py-2 text-sm font-medium text-(--main-color) transition-colors hover:bg-(--card-color)'
-                href='https://www.patreon.com/kanadojo'
+                href='https://www.patreon.com/fujilearn'
                 target='_blank'
                 rel='noreferrer'
               >

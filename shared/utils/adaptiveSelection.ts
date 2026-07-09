@@ -16,7 +16,7 @@ import localforage from 'localforage';
 const random = new Random();
 
 // Storage key prefix for localforage
-const STORAGE_KEY = 'kanadojo-adaptive-weights';
+const STORAGE_KEY = 'fujilearn-adaptive-weights';
 
 export interface CharacterWeight {
   historicalCorrect: number;

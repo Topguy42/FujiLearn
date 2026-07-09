@@ -28,22 +28,22 @@ export default function BlitzPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Vocabulary', url: 'https://kanadojo.com/vocabulary' },
-          { name: 'Blitz', url: 'https://kanadojo.com/vocabulary/blitz' },
+          { name: 'Home', url: 'https://fujilearn.com' },
+          { name: 'Vocabulary', url: 'https://fujilearn.com/vocabulary' },
+          { name: 'Blitz', url: 'https://fujilearn.com/vocabulary/blitz' },
         ]}
       />
       <LearningResourceSchema
         name='Japanese Vocabulary Blitz Mode'
         description='Fast-paced Japanese vocabulary practice game. Test your speed with vocabulary recognition across all JLPT levels in timed challenges.'
-        url='https://kanadojo.com/vocabulary/blitz'
+        url='https://fujilearn.com/vocabulary/blitz'
         learningResourceType='Game'
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
         teaches='Japanese vocabulary words and meanings (JLPT N5-N1)'
         assesses='Vocabulary recognition speed and accuracy'
         timeRequired='PT5M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FujiLearn', url: 'https://fujilearn.com' }}
       />
       <VocabBlitz />
     </>

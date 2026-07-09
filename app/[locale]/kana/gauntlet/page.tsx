@@ -28,22 +28,22 @@ export default function GauntletPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Kana', url: 'https://kanadojo.com/kana' },
-          { name: 'Gauntlet', url: 'https://kanadojo.com/kana/gauntlet' },
+          { name: 'Home', url: 'https://fujilearn.com' },
+          { name: 'Kana', url: 'https://fujilearn.com/kana' },
+          { name: 'Gauntlet', url: 'https://fujilearn.com/kana/gauntlet' },
         ]}
       />
       <LearningResourceSchema
         name='Hiragana & Katakana Gauntlet Mode'
         description='Progressive Japanese Kana challenge. Master all Hiragana and Katakana characters in order with increasing difficulty levels.'
-        url='https://kanadojo.com/kana/gauntlet'
+        url='https://fujilearn.com/kana/gauntlet'
         learningResourceType='Assessment'
         educationalLevel={['Beginner', 'Intermediate']}
         teaches='Complete mastery of Japanese Hiragana and Katakana'
         assesses='Progressive Kana recognition and mastery'
         timeRequired='PT15M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FujiLearn', url: 'https://fujilearn.com' }}
       />
       <KanaGauntlet />
     </>

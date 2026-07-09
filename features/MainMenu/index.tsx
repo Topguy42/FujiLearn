@@ -1,7 +1,7 @@
 'use client';
 import { Fragment, lazy, Suspense, useState, useEffect } from 'react';
 import { Link } from '@/core/i18n/routing';
-import KanaDojoBanner from './KanaDojoBanner';
+import FujiLearnBanner from './FujiLearnBanner';
 import Info from '@/shared/ui-composite/Menu/Info';
 import NightlyBanner from '@/shared/ui-composite/Modals/NightlyBanner';
 import {
@@ -172,7 +172,7 @@ const MainMenu = () => {
         )}
       >
         <div className='flex w-full flex-row items-center justify-between gap-2 px-1'>
-          <KanaDojoBanner />
+          <FujiLearnBanner />
           <div className='flex w-1/2 flex-row justify-end gap-2 md:w-1/3'>
             <button
               type='button'
@@ -259,7 +259,7 @@ const MainMenu = () => {
               )}
               onClick={() => {
                 playClick();
-                window.open('https://ko-fi.com/kanadojo', '_blank');
+                window.open('https://ko-fi.com/fujilearn', '_blank');
               }}
             />
           </div>

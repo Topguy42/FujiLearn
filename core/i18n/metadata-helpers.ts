@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { routing } from '@/core/i18n/routing';
 
-const DEFAULT_BASE_URL = 'https://kanadojo.com';
+const DEFAULT_BASE_URL = 'https://fujilearn.com';
 
 interface GeneratePageMetadataOptions {
   locale?: string;
@@ -102,7 +102,7 @@ export async function generatePageMetadata(
   // };
 
   // const imageType = getImageType(key);
-  // const ogImageUrl = `https://kanadojo.com/api/og?title=${encodeURIComponent(titleShort)}&description=${encodeURIComponent(description.slice(0, 100))}&type=${imageType}`;
+  // const ogImageUrl = `https://fujilearn.com/api/og?title=${encodeURIComponent(titleShort)}&description=${encodeURIComponent(description.slice(0, 100))}&type=${imageType}`;
 
   const canonicalUrl = joinUrl(baseUrl, locale, pathname);
   return {
@@ -140,7 +140,7 @@ export async function generatePageMetadata(
  * Generate default metadata with base SEO configuration
  */
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL('https://kanadojo.com'),
+  metadataBase: new URL('https://fujilearn.com'),
   robots: {
     index: true,
     follow: true,

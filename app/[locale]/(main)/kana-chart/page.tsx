@@ -11,7 +11,7 @@ export const revalidate = 3600;
 
 export async function generateMetadata() {
   return {
-    title: 'Kana Chart | Hiragana Katakana Reference | KanaDojo',
+    title: 'Kana Chart | Hiragana Katakana Reference | FujiLearn',
     description:
       'Complete Hiragana and Katakana chart with all characters, romanization, and pronunciation guide. Free interactive Japanese kana reference table for learners.',
     keywords:
@@ -31,10 +31,10 @@ export default async function KanaChartPage({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
           {
             name: 'Kana Chart',
-            url: `https://kanadojo.com/${locale}/kana-chart`,
+            url: `https://fujilearn.com/${locale}/kana-chart`,
           },
         ]}
       />

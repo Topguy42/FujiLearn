@@ -43,7 +43,7 @@ export async function generateMetadata({
     if (verbInfo) {
       return generateNextMetadata(verbInfo, {
         locale,
-        baseUrl: 'https://kanadojo.com',
+        baseUrl: 'https://fujilearn.com',
       });
     }
   }
@@ -51,7 +51,7 @@ export async function generateMetadata({
   // Return base meta for the conjugator page
   return generateNextMetadata(undefined, {
     locale,
-    baseUrl: 'https://kanadojo.com',
+    baseUrl: 'https://fujilearn.com',
   });
 }
 
@@ -91,10 +91,10 @@ export default async function ConjugatePage({
       <StructuredData data={structuredData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
+          { name: 'Home', url: 'https://fujilearn.com' },
           {
             name: 'Verb Conjugator',
-            url: 'https://kanadojo.com/conjugate',
+            url: 'https://fujilearn.com/conjugate',
           },
         ]}
       />
@@ -111,7 +111,7 @@ export default async function ConjugatePage({
           itemType='https://schema.org/WebApplication'
           id='conjugator'
         >
-          <meta itemProp='name' content='KanaDojo Japanese Verb Conjugator' />
+          <meta itemProp='name' content='FujiLearn Japanese Verb Conjugator' />
           <meta
             itemProp='applicationCategory'
             content='EducationalApplication'

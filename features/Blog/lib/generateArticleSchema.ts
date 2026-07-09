@@ -47,9 +47,9 @@ export interface ArticleSchemaOptions {
 /**
  * Base URL for the site
  */
-const BASE_URL = 'https://kanadojo.com';
-const PUBLISHER_NAME = 'KanaDojo';
-const PUBLISHER_LOGO = 'https://kanadojo.com/logo.png';
+const BASE_URL = 'https://fujilearn.com';
+const PUBLISHER_NAME = 'FujiLearn';
+const PUBLISHER_LOGO = 'https://fujilearn.com/logo.png';
 
 /**
  * Generates JSON-LD Article structured data from BlogPost

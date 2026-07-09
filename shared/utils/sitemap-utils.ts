@@ -3,7 +3,7 @@
  * Helper functions for sitemap management and submission
  */
 
-const SITE_URL = 'https://kanadojo.com';
+const SITE_URL = 'https://fujilearn.com';
 
 /**
  * Submit sitemap to search engines
@@ -85,7 +85,7 @@ export function generateImageSitemapEntry(
 }
 
 /**
- * Get all sitemap URLs for KanaDojo
+ * Get all sitemap URLs for FujiLearn
  */
 export function getAllSitemapUrls(): string[] {
   return [

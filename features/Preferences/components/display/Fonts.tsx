@@ -85,7 +85,7 @@ const Fonts = ({ useNewIconDesign = false }: FontsProps) => {
                 : 'var(--secondary-color)',
           }}
         >
-          かな道場
+          富士まなび
         </span>
       </p>
     </label>

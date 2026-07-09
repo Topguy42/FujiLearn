@@ -4,7 +4,7 @@
  * Good internal linking improves crawlability and page authority distribution
  */
 
-const SITE_URL = 'https://kanadojo.com';
+const SITE_URL = 'https://fujilearn.com';
 
 export interface InternalLink {
   href: string;
@@ -18,8 +18,8 @@ export interface InternalLink {
 export const mainLinks = {
   home: {
     href: '/',
-    text: 'KanaDojo',
-    title: 'KanaDojo - Learn Japanese Online',
+    text: 'FujiLearn',
+    title: 'FujiLearn - Learn Japanese Online',
   },
   kana: {
     href: '/kana',

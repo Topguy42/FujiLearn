@@ -28,15 +28,15 @@ export default function Train() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Kanji', url: 'https://kanadojo.com/kanji' },
-          { name: 'Training', url: 'https://kanadojo.com/kanji/train' },
+          { name: 'Home', url: 'https://fujilearn.com' },
+          { name: 'Kanji', url: 'https://fujilearn.com/kanji' },
+          { name: 'Training', url: 'https://fujilearn.com/kanji/train' },
         ]}
       />
       <CourseSchema
         name='Kanji Training'
         description='Learn Japanese Kanji characters organized by JLPT levels with interactive recognition and writing practice.'
-        url='https://kanadojo.com/kanji/train'
+        url='https://fujilearn.com/kanji/train'
         skillLevel='Beginner to Advanced'
         learningResourceType='Interactive Kanji Training'
       />

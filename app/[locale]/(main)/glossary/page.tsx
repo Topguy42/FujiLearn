@@ -18,10 +18,10 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title =
-    'Japanese-English Glossary - Essential Learning Terms | KanaDojo';
+    'Japanese-English Glossary - Essential Learning Terms | FujiLearn';
   const description =
     'Comprehensive Japanese-English glossary of essential learning terms. Understand Hiragana, Katakana, Kanji, grammar, and Japanese language concepts with clear explanations.';
-  const canonical = `https://kanadojo.com/${locale}/glossary`;
+  const canonical = `https://fujilearn.com/${locale}/glossary`;
 
   return {
     title,
@@ -31,8 +31,8 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        en: 'https://kanadojo.com/en/glossary',
-        es: 'https://kanadojo.com/es/glossary',
+        en: 'https://fujilearn.com/en/glossary',
+        es: 'https://fujilearn.com/es/glossary',
       },
     },
     openGraph: {
@@ -236,8 +236,8 @@ export default async function GlossaryPage({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
-          { name: 'Glossary', url: `https://kanadojo.com/${locale}/glossary` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
+          { name: 'Glossary', url: `https://fujilearn.com/${locale}/glossary` },
         ]}
       />
 

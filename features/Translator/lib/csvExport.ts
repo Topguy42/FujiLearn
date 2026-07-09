@@ -82,7 +82,7 @@ export function exportHistoryToCSV(entries: TranslationEntry[]): void {
 
   if (csv) {
     const timestamp = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
-    const filename = `kanadojo-translations-${timestamp}.csv`;
+    const filename = `fujilearn-translations-${timestamp}.csv`;
     downloadCSV(csv, filename);
   }
 }

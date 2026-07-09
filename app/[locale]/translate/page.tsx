@@ -19,7 +19,7 @@ interface TranslatePageProps {
 
 const metadataConfig = {
   pathname: '/translate',
-  title: 'Japanese Translator | English ⇄ Japanese with Romaji | KanaDojo',
+  title: 'Japanese Translator | English ⇄ Japanese with Romaji | FujiLearn',
   description:
     'Free Japanese translator for English to Japanese and Japanese to English text. Translate quickly, review romaji support, and jump into direction-specific pages for better context.',
   keywords: [
@@ -88,7 +88,7 @@ export default async function TranslatePage(_: TranslatePageProps) {
           itemType='https://schema.org/SoftwareApplication'
           id='translator'
         >
-          <meta itemProp='name' content='KanaDojo Japanese Translator' />
+          <meta itemProp='name' content='FujiLearn Japanese Translator' />
           <meta
             itemProp='applicationCategory'
             content='EducationalApplication'

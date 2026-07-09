@@ -15,7 +15,7 @@ interface DojoRouteSchemaProps {
   };
 }
 
-const BASE_URL = 'https://kanadojo.com';
+const BASE_URL = 'https://fujilearn.com';
 
 function withLocalePath(locale: string, path: string) {
   return `${BASE_URL}/${locale}${path}`;
@@ -74,7 +74,7 @@ export function DojoRouteSchema({
     {
       '@type': 'SoftwareApplication',
       '@id': `${pageUrl}#software`,
-      name: `KanaDojo ${routeName} Practice`,
+      name: `FujiLearn ${routeName} Practice`,
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Web',
       url: appRouteUrl,
@@ -106,7 +106,7 @@ export function DojoRouteSchema({
       provider: {
         '@type': 'Organization',
         '@id': `${BASE_URL}/#organization`,
-        name: 'KanaDojo',
+        name: 'FujiLearn',
         url: BASE_URL,
       },
       ...(educationalAlignment

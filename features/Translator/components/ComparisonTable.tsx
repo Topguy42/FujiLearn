@@ -5,7 +5,7 @@ import { cn } from '@/shared/utils/utils';
 
 interface Feature {
   name: string;
-  kanadojo: boolean;
+  fujilearn: boolean;
   googleTranslate: boolean;
   deepl: boolean;
   microsoft: boolean;
@@ -14,84 +14,84 @@ interface Feature {
 const features: Feature[] = [
   {
     name: 'Free to use',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: true,
     deepl: true,
     microsoft: true,
   },
   {
     name: 'No registration required',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: true,
     deepl: false,
     microsoft: true,
   },
   {
     name: 'Romanization (Romaji)',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: false,
     microsoft: false,
   },
   {
     name: 'Translation history',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: false,
     microsoft: false,
   },
   {
     name: 'Keyboard shortcuts',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: false,
     microsoft: false,
   },
   {
     name: 'Offline detection',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: false,
     microsoft: false,
   },
   {
     name: 'Privacy-focused (local storage)',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: false,
     microsoft: false,
   },
   {
     name: 'Clean, distraction-free UI',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: true,
     microsoft: false,
   },
   {
     name: 'Integrated learning platform',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: false,
     microsoft: false,
   },
   {
     name: 'Japanese learning tools',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: false,
     microsoft: false,
   },
   {
     name: 'JLPT preparation support',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: false,
     deepl: false,
     microsoft: false,
   },
   {
     name: 'Mobile optimized',
-    kanadojo: true,
+    fujilearn: true,
     googleTranslate: true,
     deepl: true,
     microsoft: true,
@@ -115,7 +115,7 @@ export default function ComparisonTable() {
       {/* Header */}
       <div className='border-b border-(--border-color) bg-gradient-to-r from-(--card-color) to-(--background-color) p-4 sm:p-6'>
         <h2 className='text-xl font-bold text-(--main-color) sm:text-2xl'>
-          KanaDojo vs Other Japanese Translators
+          FujiLearn vs Other Japanese Translators
         </h2>
         <p className='mt-1 text-xs text-(--secondary-color) sm:text-sm'>
           Compare features to find the best Japanese translation tool for your
@@ -142,7 +142,7 @@ export default function ComparisonTable() {
                   'bg-(--main-color)/10 text-(--main-color)',
                 )}
               >
-                KanaDojo
+                FujiLearn
               </th>
               <th className='px-3 py-3 text-center text-xs font-semibold text-(--secondary-color) sm:px-6 sm:text-sm'>
                 Google Translate
@@ -172,7 +172,7 @@ export default function ComparisonTable() {
                     'bg-(--main-color)/5 px-3 py-3 text-center sm:px-6',
                   )}
                 >
-                  {feature.kanadojo ? <CheckIcon /> : <XIcon />}
+                  {feature.fujilearn ? <CheckIcon /> : <XIcon />}
                 </td>
                 <td className='px-3 py-3 text-center sm:px-6'>
                   {feature.googleTranslate ? <CheckIcon /> : <XIcon />}
@@ -199,7 +199,7 @@ export default function ComparisonTable() {
           <strong className='text-(--main-color)'>
             When to use each:
           </strong>{' '}
-          <span className='font-medium'>KanaDojo</span> is best for Japanese
+          <span className='font-medium'>FujiLearn</span> is best for Japanese
           learners who need romanization, history, and integrated learning
           tools. <span className='font-medium'>Google Translate</span> excels at
           multi-language support beyond Japanese.{' '}

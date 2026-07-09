@@ -53,7 +53,7 @@ interface CustomWallpaperStore {
 // IndexedDB helpers
 // ============================================================================
 
-const DB_NAME = 'kanadojo-custom-wallpapers';
+const DB_NAME = 'fujilearn-custom-wallpapers';
 const DB_VERSION = 1;
 const STORE_NAME = 'images';
 
@@ -212,7 +212,7 @@ export const useCustomWallpaperStore = create<CustomWallpaperStore>()(
       },
     }),
     {
-      name: 'kanadojo-custom-wallpapers-meta',
+      name: 'fujilearn-custom-wallpapers-meta',
       storage: createJSONStorage(() => localStorage),
       // Only persist wallpaper metadata (not runtime object URLs)
       partialize: state => ({

@@ -1,10 +1,10 @@
 const securityPolicy = `
-At **KanaDojo**, we take security seriously and strive to protect our website and users from potential threats. Although our website does not collect personal user data directly, we implement security measures to safeguard our platform.
+At **FujiLearn**, we take security seriously and strive to protect our website and users from potential threats. Although our website does not collect personal user data directly, we implement security measures to safeguard our platform.
 
 
 ## 1. Scope
 
-This Security Policy applies to the **KanaDojo** website (kanadojo.com), including its infrastructure, content, and third-party services used (such as Google Analytics, Microsoft Clarity, and PostHog).
+This Security Policy applies to the **FujiLearn** website (fujilearn.com), including its infrastructure, content, and third-party services used (such as Google Analytics, Microsoft Clarity, and PostHog).
 
 
 ## 2. Website Security Practices
@@ -42,8 +42,8 @@ If you discover a security vulnerability on our website, we encourage responsibl
 
 If you believe you have found a security issue, please contact us immediately via:
 
-- 📧 **Email:** dev@kanadojo.com
-- 📩 **Bug Report Form:** kanadojo.com/report 
+- 📧 **Email:** dev@fujilearn.com
+- 📩 **Bug Report Form:** fujilearn.com/report 
 
 We appreciate **ethical hacking and responsible disclosure** and will investigate reported vulnerabilities promptly.
 
@@ -79,11 +79,11 @@ We may update this Security Policy from time to time. Any changes will be **publ
 
 For any questions or concerns about this Security Policy, you can reach us at:
 
-📧 **Email:** *dev@kanadojo.com* 
+📧 **Email:** *dev@fujilearn.com* 
 
 ---
 
-**Thank you for helping KanaDojo maintain a safe and secure website! 🚀**  
+**Thank you for helping FujiLearn maintain a safe and secure website! 🚀**  
 `;
 
 export default securityPolicy;

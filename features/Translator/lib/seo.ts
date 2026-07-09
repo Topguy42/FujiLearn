@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const BASE_URL = 'https://kanadojo.com';
+const BASE_URL = 'https://fujilearn.com';
 
 export interface TranslatorFaqEntry {
   question: string;
@@ -111,7 +111,7 @@ export function buildTranslatorSchema(config: TranslatorSeoConfig) {
     graph.push({
       '@type': 'SoftwareApplication',
       '@id': `${pageUrl}#software`,
-      name: 'KanaDojo Japanese Translator',
+      name: 'FujiLearn Japanese Translator',
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Web',
       url: pageUrl,

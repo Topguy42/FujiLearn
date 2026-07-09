@@ -117,7 +117,7 @@ export const useMenuSelectorStore = create<MenuSelectorState>()(
         })),
     }),
     {
-      name: 'kanadojo-menu-selector-session',
+      name: 'fujilearn-menu-selector-session',
       storage:
         typeof window !== 'undefined'
           ? createJSONStorage(() => sessionStorage)

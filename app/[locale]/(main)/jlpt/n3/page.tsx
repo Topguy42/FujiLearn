@@ -17,10 +17,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  const title = 'JLPT N3 Vocabulary Guide - Intermediate Japanese | KanaDojo';
+  const title = 'JLPT N3 Vocabulary Guide - Intermediate Japanese | FujiLearn';
   const description =
     'Complete JLPT N3 vocabulary and kanji guide for intermediate Japanese learners. Free interactive practice with ~370 kanji and 3,000+ vocabulary words. Master N3 efficiently!';
-  const canonical = `https://kanadojo.com/${locale}/jlpt/n3`;
+  const canonical = `https://fujilearn.com/${locale}/jlpt/n3`;
 
   return {
     title,
@@ -30,8 +30,8 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        en: 'https://kanadojo.com/en/jlpt/n3',
-        es: 'https://kanadojo.com/es/jlpt/n3',
+        en: 'https://fujilearn.com/en/jlpt/n3',
+        es: 'https://fujilearn.com/es/jlpt/n3',
       },
     },
     openGraph: {
@@ -54,9 +54,9 @@ export default async function JLPTN3Page({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
-          { name: 'JLPT', url: `https://kanadojo.com/${locale}/jlpt/n3` },
-          { name: 'N3', url: `https://kanadojo.com/${locale}/jlpt/n3` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
+          { name: 'JLPT', url: `https://fujilearn.com/${locale}/jlpt/n3` },
+          { name: 'N3', url: `https://fujilearn.com/${locale}/jlpt/n3` },
         ]}
       />
       <div className='mx-auto max-w-4xl px-4 py-8'>
@@ -217,7 +217,7 @@ export default async function JLPTN3Page({
                 </h3>
                 <p>
                   With 3,000 words to learn, spaced repetition is essential.
-                  KanaDojo&apos;s training modes help reinforce memory.
+                  FujiLearn&apos;s training modes help reinforce memory.
                 </p>
               </div>
             </div>
@@ -262,7 +262,7 @@ export default async function JLPTN3Page({
           {/* Practice Tools */}
           <section>
             <h2 className='mb-4 text-3xl font-semibold text-(--main-color)'>
-              Practice with KanaDojo
+              Practice with FujiLearn
             </h2>
             <div className='grid gap-4 md:grid-cols-2'>
               <div className='rounded-lg border-2 border-(--border-color) p-4'>

@@ -28,7 +28,7 @@ import { conjugate } from '../lib/engine/conjugate';
 const MAX_HISTORY_ENTRIES = 50;
 
 /** Storage key for persisted state */
-const STORAGE_KEY = 'kanadojo-conjugator';
+const STORAGE_KEY = 'fujilearn-conjugator';
 
 // ============================================================================
 // Store Interface

@@ -229,7 +229,7 @@ export const useGoalTimersStore = create<GoalTimersStore>()(
       },
     }),
     {
-      name: 'kanadojo-goal-timers', // localStorage key
+      name: 'fujilearn-goal-timers', // localStorage key
       storage: createJSONStorage(() => localStorage),
       // Only persist templates, history, and settings
       partialize: state => ({

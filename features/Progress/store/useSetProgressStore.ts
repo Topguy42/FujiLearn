@@ -28,10 +28,10 @@ interface SetProgressState {
   clearSetProgress: () => Promise<void>;
 }
 
-const STORAGE_KEY = 'kanadojo-set-progress-v1';
+const STORAGE_KEY = 'fujilearn-set-progress-v1';
 
 const setProgressStore = localforage.createInstance({
-  name: 'kanadojo',
+  name: 'fujilearn',
   storeName: 'set_progress',
 });
 

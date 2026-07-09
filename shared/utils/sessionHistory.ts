@@ -77,7 +77,7 @@ interface SessionHistoryStore {
   activeSessionsById: Record<string, SessionDraft>;
 }
 
-const STORAGE_KEY = 'kanadojo-session-history-v1';
+const STORAGE_KEY = 'fujilearn-session-history-v1';
 
 const getDefaultStore = (): SessionHistoryStore => {
   const now = Date.now();

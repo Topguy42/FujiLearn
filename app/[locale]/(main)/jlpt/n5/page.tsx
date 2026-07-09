@@ -18,10 +18,10 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const title =
-    'JLPT N5 Study Guide - Complete Preparation Resource | KanaDojo';
+    'JLPT N5 Study Guide - Complete Preparation Resource | FujiLearn';
   const description =
     'Complete JLPT N5 study guide with all essential Kanji, vocabulary, and study tips. Free interactive practice for JLPT N5 exam success. Start preparing today!';
-  const canonical = `https://kanadojo.com/${locale}/jlpt/n5`;
+  const canonical = `https://fujilearn.com/${locale}/jlpt/n5`;
 
   return {
     title,
@@ -31,8 +31,8 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        en: 'https://kanadojo.com/en/jlpt/n5',
-        es: 'https://kanadojo.com/es/jlpt/n5',
+        en: 'https://fujilearn.com/en/jlpt/n5',
+        es: 'https://fujilearn.com/es/jlpt/n5',
       },
     },
     openGraph: {
@@ -55,9 +55,9 @@ export default async function JLPTN5Page({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
-          { name: 'JLPT', url: `https://kanadojo.com/${locale}/jlpt/n5` },
-          { name: 'N5', url: `https://kanadojo.com/${locale}/jlpt/n5` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
+          { name: 'JLPT', url: `https://fujilearn.com/${locale}/jlpt/n5` },
+          { name: 'N5', url: `https://fujilearn.com/${locale}/jlpt/n5` },
         ]}
       />
       <div className='mx-auto max-w-4xl px-4 py-8'>
@@ -257,7 +257,7 @@ export default async function JLPTN5Page({
                 </h3>
                 <ul className='list-disc space-y-1 pl-6'>
                   <li>Complete all 800 vocabulary words</li>
-                  <li>Review all Kanji with KanaDojo</li>
+                  <li>Review all Kanji with FujiLearn</li>
                   <li>Take practice tests</li>
                   <li>Focus on weak areas</li>
                 </ul>
@@ -276,7 +276,7 @@ export default async function JLPTN5Page({
                   ✅ Do This:
                 </h3>
                 <ul className='list-disc space-y-1 pl-6'>
-                  <li>Practice daily with KanaDojo</li>
+                  <li>Practice daily with FujiLearn</li>
                   <li>Learn kanji in context, not isolation</li>
                   <li>Review vocabulary regularly</li>
                   <li>Take timed practice tests</li>
@@ -306,7 +306,7 @@ export default async function JLPTN5Page({
             </h2>
             <p className='mb-6 text-lg'>
               Everything you need to pass JLPT N5 is available for free on
-              KanaDojo!
+              FujiLearn!
             </p>
             <div className='flex flex-col gap-4 sm:flex-row sm:justify-center'>
               <Link

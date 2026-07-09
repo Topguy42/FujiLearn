@@ -783,7 +783,7 @@ const useStatsStore = create<IStatsState>()(
         })),
     }),
     {
-      name: 'kanadojo-stats',
+      name: 'fujilearn-stats',
       storage: createDebouncedStorage(),
       partialize: state => ({ allTimeStats: state.allTimeStats }),
       merge: (persistedState, currentState) => {

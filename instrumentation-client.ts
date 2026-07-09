@@ -20,7 +20,7 @@ export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;
  * that no longer exist. This handler detects such failures and auto-reloads the page
  * to fetch fresh HTML with correct chunk references.
  */
-const RELOAD_FLAG = 'kanadojo_chunk_reload';
+const RELOAD_FLAG = 'fujilearn_chunk_reload';
 
 // Only attempt one auto-reload per session to prevent infinite loops
 if (typeof window !== 'undefined' && !sessionStorage.getItem(RELOAD_FLAG)) {
@@ -37,7 +37,7 @@ if (typeof window !== 'undefined' && !sessionStorage.getItem(RELOAD_FLAG)) {
         message.includes('dynamically imported module'));
 
     if (isChunkError) {
-      console.warn('[KanaDojo] Detected stale chunks, reloading page...');
+      console.warn('[FujiLearn] Detected stale chunks, reloading page...');
       sessionStorage.setItem(RELOAD_FLAG, 'true');
       window.location.reload();
     }
@@ -56,7 +56,7 @@ if (typeof window !== 'undefined' && !sessionStorage.getItem(RELOAD_FLAG)) {
 
     if (isChunkError) {
       console.warn(
-        '[KanaDojo] Detected stale chunks (promise rejection), reloading page...',
+        '[FujiLearn] Detected stale chunks (promise rejection), reloading page...',
       );
       sessionStorage.setItem(RELOAD_FLAG, 'true');
       window.location.reload();

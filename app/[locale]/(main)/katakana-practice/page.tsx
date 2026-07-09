@@ -42,10 +42,10 @@ export default async function KatakanaPracticePage({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
           {
             name: t('katakana.title'),
-            url: `https://kanadojo.com/${locale}/katakana-practice`,
+            url: `https://fujilearn.com/${locale}/katakana-practice`,
           },
         ]}
       />

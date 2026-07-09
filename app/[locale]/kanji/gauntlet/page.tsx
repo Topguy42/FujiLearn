@@ -28,22 +28,22 @@ export default function GauntletPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Kanji', url: 'https://kanadojo.com/kanji' },
-          { name: 'Gauntlet', url: 'https://kanadojo.com/kanji/gauntlet' },
+          { name: 'Home', url: 'https://fujilearn.com' },
+          { name: 'Kanji', url: 'https://fujilearn.com/kanji' },
+          { name: 'Gauntlet', url: 'https://fujilearn.com/kanji/gauntlet' },
         ]}
       />
       <LearningResourceSchema
         name='Kanji Gauntlet Mode'
         description='Progressive Japanese Kanji mastery challenge. Test your knowledge across JLPT levels with increasing difficulty.'
-        url='https://kanadojo.com/kanji/gauntlet'
+        url='https://fujilearn.com/kanji/gauntlet'
         learningResourceType='Assessment'
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
         teaches='Complete Kanji mastery across JLPT N5-N1 levels'
         assesses='Progressive Kanji recognition and understanding'
         timeRequired='PT20M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FujiLearn', url: 'https://fujilearn.com' }}
       />
       <KanjiGauntlet />
     </>

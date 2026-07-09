@@ -45,7 +45,7 @@ export async function generateMetadata({
   const resources = getResourcesByCategory(categoryId);
   const resourceCount = resources.length;
 
-  const title = `Best ${category.name} for Learning Japanese - ${resourceCount}+ Resources | KanaDojo`;
+  const title = `Best ${category.name} for Learning Japanese - ${resourceCount}+ Resources | FujiLearn`;
   const description = `${category.description} Discover ${resourceCount}+ curated ${category.name.toLowerCase()} to help you learn Japanese effectively.`;
 
   return {
@@ -60,18 +60,18 @@ export async function generateMetadata({
       'japanese study resources',
     ],
     openGraph: {
-      title: `Best ${category.name} for Learning Japanese | KanaDojo`,
+      title: `Best ${category.name} for Learning Japanese | FujiLearn`,
       description,
-      url: `https://kanadojo.com/resources/${categoryId}`,
+      url: `https://fujilearn.com/resources/${categoryId}`,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Best ${category.name} for Learning Japanese | KanaDojo`,
+      title: `Best ${category.name} for Learning Japanese | FujiLearn`,
       description,
     },
     alternates: {
-      canonical: `https://kanadojo.com/resources/${categoryId}`,
+      canonical: `https://fujilearn.com/resources/${categoryId}`,
     },
   };
 }
@@ -125,11 +125,11 @@ export default async function CategoryPage({
   const availableFilters = getFilterOptions(categoryResources);
 
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://kanadojo.com' },
-    { name: 'Resources', url: 'https://kanadojo.com/resources' },
+    { name: 'Home', url: 'https://fujilearn.com' },
+    { name: 'Resources', url: 'https://fujilearn.com/resources' },
     {
       name: category.name,
-      url: `https://kanadojo.com/resources/${categoryId}`,
+      url: `https://fujilearn.com/resources/${categoryId}`,
     },
   ];
 

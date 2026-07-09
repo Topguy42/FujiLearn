@@ -624,14 +624,14 @@ const Sidebar = () => {
         <h1 className='max-3xl:flex-col max-3xl:items-start flex items-center gap-1.5 pl-4 text-3xl'>
           {USE_AURORA_SIDEBAR_HEADING ? (
             <>
-              <AuroraText className='font-bold'>KanaDojo</AuroraText>
-              <AuroraText className='font-normal'>かな道場️</AuroraText>
+              <AuroraText className='font-bold'>FujiLearn</AuroraText>
+              <AuroraText className='font-normal'>富士まなび️</AuroraText>
             </>
           ) : (
             <>
-              <span className='font-bold'>KanaDojo</span>
+              <span className='font-bold'>FujiLearn</span>
               <span className='font-normal text-(--secondary-color)'>
-                かな道場️
+                富士まなび️
               </span>
             </>
           )}

@@ -37,10 +37,10 @@ export default async function ProgressPage({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
           {
             name: 'Progress',
-            url: `https://kanadojo.com/${locale}/progress`,
+            url: `https://fujilearn.com/${locale}/progress`,
           },
         ]}
       />

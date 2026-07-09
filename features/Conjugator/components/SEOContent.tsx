@@ -56,7 +56,7 @@ export default function SEOContent({ verb }: SEOContentProps) {
 
       <div className='border-t border-(--border-color)/10 pt-8'>
         <p className='text-xs text-(--secondary-color)/40'>
-          KanaDojo provides accurate Japanese verb conjugations for students and
+          FujiLearn provides accurate Japanese verb conjugations for students and
           speakers.
         </p>
       </div>

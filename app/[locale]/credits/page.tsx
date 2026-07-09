@@ -11,9 +11,9 @@ export function generateStaticParams() {
 export const revalidate = 3600;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Credits & Data Sources | KanaDojo';
+  const title = 'Credits & Data Sources | FujiLearn';
   const description =
-    'KanaDojo uses trusted Japanese language data sources including JMdict, KANJIDIC, and open-source libraries to provide accurate learning tools.';
+    'FujiLearn uses trusted Japanese language data sources including JMdict, KANJIDIC, and open-source libraries to provide accurate learning tools.';
 
   return {
     title,
@@ -26,12 +26,12 @@ export async function generateMetadata(): Promise<Metadata> {
       'open source japanese',
     ],
     alternates: {
-      canonical: 'https://kanadojo.com/credits',
+      canonical: 'https://fujilearn.com/credits',
     },
     openGraph: {
       title,
       description,
-      url: 'https://kanadojo.com/credits',
+      url: 'https://fujilearn.com/credits',
       type: 'website',
     },
     robots: {
@@ -122,7 +122,7 @@ export default function CreditsPage() {
       lastUpdated='April 8, 2026'
     >
       <p className='mb-8 text-lg text-(--secondary-color)'>
-        KanaDojo is built on trusted Japanese language data sources and
+        FujiLearn is built on trusted Japanese language data sources and
         open-source technologies. We&apos;re grateful to the maintainers and
         contributors who make these resources available.
       </p>
@@ -204,7 +204,7 @@ export default function CreditsPage() {
         <p>
           We also thank the broader open-source community for creating and
           maintaining the libraries and tools that power modern web
-          applications. Without their contributions, projects like KanaDojo
+          applications. Without their contributions, projects like FujiLearn
           wouldn&apos;t be possible.
         </p>
       </div>
@@ -214,7 +214,7 @@ export default function CreditsPage() {
       </h2>
       <div className='mb-12 space-y-4 text-(--secondary-color)'>
         <p>
-          KanaDojo respects the licenses of all data sources and libraries used.
+          FujiLearn respects the licenses of all data sources and libraries used.
           Where required by license terms, we provide proper attribution:
         </p>
         <ul className='list-disc space-y-2 pl-6'>
@@ -227,7 +227,7 @@ export default function CreditsPage() {
             respective licenses (MIT, Apache 2.0, etc.).
           </li>
           <li>
-            KanaDojo&apos;s original code and content are created by the
+            FujiLearn&apos;s original code and content are created by the
             development team and released under our own license terms.
           </li>
         </ul>
@@ -250,7 +250,7 @@ export default function CreditsPage() {
             href='/about'
             className='rounded-lg border border-(--border-color) px-4 py-2 font-medium text-(--main-color) transition-colors hover:bg-(--main-color) hover:text-white'
           >
-            About KanaDojo
+            About FujiLearn
           </Link>
           <Link
             href='/privacy'

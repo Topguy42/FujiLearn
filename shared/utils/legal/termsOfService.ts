@@ -1,5 +1,5 @@
 const termsOfService = `
-Welcome to **KanaDojo** (the "Website"). By accessing or using our Website, you automatically agree to comply with and be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Website.
+Welcome to **FujiLearn** (the "Website"). By accessing or using our Website, you automatically agree to comply with and be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Website.
 
 
 ## 1. General Use  
@@ -16,7 +16,7 @@ Welcome to **KanaDojo** (the "Website"). By accessing or using our Website, you 
 
 
 ## 3. Intellectual Property  
-- **Ownership:** All text, images, graphics, and materials on the Website belong to **KanaDojo** unless otherwise stated.  
+- **Ownership:** All text, images, graphics, and materials on the Website belong to **FujiLearn** unless otherwise stated.  
 - **Restrictions:** You may not copy, distribute, modify, or reproduce our content without permission.  
 
 ## 4. Third-Party Links & Services  
@@ -33,7 +33,7 @@ Welcome to **KanaDojo** (the "Website"). By accessing or using our Website, you 
 
 
 ## 6. Limitation of Liability  
-- **KanaDojo** is not liable for damages, **direct or indirect**, arising from your use of the Website.  
+- **FujiLearn** is not liable for damages, **direct or indirect**, arising from your use of the Website.  
 - We are not responsible for **data loss, system failures, or security breaches** related to using third-party services like Google Analytics, Microsoft Clarity, or PostHog.  
 
 
@@ -44,10 +44,10 @@ We may update these Terms from time to time. Changes will be posted on this page
 ## 8. Contact Information  
 If you have any questions or concerns about these Terms, contact us at:  
 
-📧 **Email:** dev@kanadojo.com  
+📧 **Email:** dev@fujilearn.com  
 
 
-**Thank you for using KanaDojo!** 🚀  
+**Thank you for using FujiLearn!** 🚀  
 `;
 
 export default termsOfService;

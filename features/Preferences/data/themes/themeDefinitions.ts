@@ -13,6 +13,7 @@ import {
   CloudLightning,
   TreePine,
   Sparkles,
+  Flower2,
 } from 'lucide-react';
 import { GENERATED_WALLPAPERS } from '../wallpapers/wallpapers.generated';
 
@@ -60,6 +61,29 @@ const baseThemeSets: BaseThemeGroup[] = [
         } as BaseThemeGroup,
       ]
     : []),
+  {
+    name: 'Sakura (FujiLearn)',
+    icon: Flower2,
+    isLight: true,
+    themes: [
+      {
+        id: 'sakura-light',
+        displayName: 'sakura light',
+        isLight: true,
+        backgroundColor: 'oklch(97.50% 0.0130 350.00 / 1)',
+        mainColor: 'oklch(58.00% 0.1500 350.00 / 1)',
+        secondaryColor: 'oklch(64.00% 0.1000 150.00 / 1)',
+      },
+      {
+        id: 'sakura-dark',
+        displayName: 'sakura dark',
+        isLight: false,
+        backgroundColor: 'oklch(19.00% 0.0350 340.00 / 1)',
+        mainColor: 'oklch(82.00% 0.1100 350.00 / 1)',
+        secondaryColor: 'oklch(78.00% 0.0900 155.00 / 1)',
+      },
+    ],
+  },
   {
     name: 'Base',
     icon: Atom,

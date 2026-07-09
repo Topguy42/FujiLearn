@@ -54,11 +54,11 @@ export default function DonationModal({
             <div className='min-h-0 flex-1 overflow-y-auto px-4 py-3 sm:px-6 sm:py-5'>
               <div className='space-y-4 text-(--secondary-color)'>
                 <p className='text-base leading-7'>
-                  Thank you for spending your time with KanaDojo. We are honored
+                  Thank you for spending your time with FujiLearn. We are honored
                   to be a part of your Japanese learning journey.
                 </p>
                 <p className='text-base leading-7'>
-                  If KanaDojo has been helpful to you, we would be incredibly
+                  If FujiLearn has been helpful to you, we would be incredibly
                   grateful if you ever considered supporting it with a donation.
                   {/*
                   We completely understand that not everyone can, and we thank
@@ -73,7 +73,7 @@ export default function DonationModal({
                   {/*
                   Thank
                   you for your kindness, your understanding, and for helping us
-                  keep KanaDojo welcoming and accessible for everyone who relies
+                  keep FujiLearn welcoming and accessible for everyone who relies
                   on it.
  */}
                 </p>
@@ -98,7 +98,7 @@ export default function DonationModal({
                   )}
                 >
                   <a
-                    href='https://ko-fi.com/kanadojo'
+                    href='https://ko-fi.com/fujilearn'
                     target='_blank'
                     rel='noopener'
                     onClick={playClick}

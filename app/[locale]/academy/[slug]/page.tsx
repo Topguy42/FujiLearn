@@ -53,7 +53,7 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: 'Post Not Found | KanaDojo Academy',
+      title: 'Post Not Found | FujiLearn Academy',
       description: 'The requested article could not be found.',
     };
   }
@@ -245,13 +245,13 @@ export default async function AcademyPostPage({
       <StructuredData data={articleSchema} />
       <StructuredData data={breadcrumbSchema} />
       <AuthorSchema
-        name={post.author || 'KanaDojo Team'}
-        url='https://kanadojo.com'
+        name={post.author || 'FujiLearn Team'}
+        url='https://fujilearn.com'
         jobTitle='Japanese Language Education Team'
-        affiliation='KanaDojo'
+        affiliation='FujiLearn'
         expertise='Japanese Language Education, Hiragana, Katakana, Kanji, JLPT Preparation'
-        description='The KanaDojo team creates free, interactive Japanese learning tools and in-depth educational content to help learners at every level.'
-        sameAs={['https://github.com/lingdojo/kanadojo']}
+        description='The FujiLearn team creates free, interactive Japanese learning tools and in-depth educational content to help learners at every level.'
+        sameAs={['https://github.com/lingdojo/fujilearn']}
       />
 
       <BlogPostComponent post={post} relatedPosts={relatedPostsMeta}>

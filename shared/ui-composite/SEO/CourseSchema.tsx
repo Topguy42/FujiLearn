@@ -17,7 +17,7 @@ export function generateCourseSchema(props: CourseSchemaProps) {
     name,
     description,
     url,
-    provider = 'KanaDojo',
+    provider = 'FujiLearn',
     educationalLevel = 'Beginner to Advanced',
     skillLevel = 'All Levels',
     courseMode = 'online',
@@ -34,7 +34,7 @@ export function generateCourseSchema(props: CourseSchemaProps) {
     provider: {
       '@type': 'Organization',
       name: provider,
-      url: 'https://kanadojo.com',
+      url: 'https://fujilearn.com',
     },
     educationalLevel,
     courseMode,

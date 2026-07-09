@@ -22,21 +22,21 @@ export const viewport: Viewport = {
   maximumScale: 5.0,
   userScalable: true,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+    { media: '(prefers-color-scheme: light)', color: '#fdeef2' },
+    { media: '(prefers-color-scheme: dark)', color: '#2a1a24' },
   ],
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kanadojo.com'),
+  metadataBase: new URL('https://fujilearn.com'),
   manifest: '/manifest.json',
   title: {
     default:
-      'KanaDojo - Learn Japanese Hiragana, Katakana, Kanji & Vocabulary Online',
-    template: '%s | KanaDojo',
+      'FujiLearn - Learn Japanese Hiragana, Katakana, Kanji & Vocabulary Online',
+    template: '%s | FujiLearn',
   },
   description:
-    'Master Japanese with KanaDojo - a fun, aesthetic platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Practice with interactive games, track progress, and customize your learning experience.',
+    'Master Japanese with FujiLearn - a fun, aesthetic platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Practice with interactive games, track progress, and customize your learning experience.',
   icons: {
     icon: [
       { url: '/favicon.ico?v=2' },
@@ -69,11 +69,11 @@ export const metadata: Metadata = {
     'japanese writing system',
     'JLPT preparation',
     'japanese language learning',
-    'kana dojo',
+    'fujilearn',
     'japanese study tool',
     'free japanese lessons',
   ],
-  authors: [{ name: 'LingDojo', url: 'https://kanadojo.com' }],
+  authors: [{ name: 'LingDojo', url: 'https://fujilearn.com' }],
   creator: 'LingDojo',
   publisher: 'LingDojo',
   formatDetection: {
@@ -82,24 +82,24 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'KanaDojo - Learn Japanese Hiragana, Katakana, Kanji & Vocabulary',
+    title: 'FujiLearn - Learn Japanese Hiragana, Katakana, Kanji & Vocabulary',
     description:
-      'Master Japanese with KanaDojo - an aesthetic, minimalist platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Interactive games, progress tracking, and 100+ themes.',
-    url: 'https://kanadojo.com',
-    siteName: 'KanaDojo',
+      'Master Japanese with FujiLearn - an aesthetic, minimalist platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Interactive games, progress tracking, and 100+ themes.',
+    url: 'https://fujilearn.com',
+    siteName: 'FujiLearn',
     type: 'website',
     locale: 'en_US',
     alternateLocale: ['es_ES'],
   },
   twitter: {
     card: 'summary',
-    title: 'KanaDojo - Learn Japanese Online',
+    title: 'FujiLearn - Learn Japanese Online',
     description:
       'Master Japanese Hiragana, Katakana, Kanji & Vocabulary with interactive games and beautiful themes.',
-    creator: '@kanadojo',
+    creator: '@fujilearn',
   },
   alternates: {
-    canonical: 'https://kanadojo.com',
+    canonical: 'https://fujilearn.com',
   },
   robots: {
     index: true,

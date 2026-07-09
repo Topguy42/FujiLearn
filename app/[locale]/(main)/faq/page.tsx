@@ -152,7 +152,7 @@ export default async function FAQPage({
   ];
 
   const faqsForSchema = groups.flatMap(group => group.faqs);
-  const pageUrl = `https://kanadojo.com/${locale}/faq`;
+  const pageUrl = `https://fujilearn.com/${locale}/faq`;
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -165,7 +165,7 @@ export default async function FAQPage({
         description: t('subtitle'),
         inLanguage: locale,
         isPartOf: {
-          '@id': 'https://kanadojo.com/#website',
+          '@id': 'https://fujilearn.com/#website',
         },
         about: {
           '@type': 'Thing',
@@ -206,8 +206,8 @@ export default async function FAQPage({
       <StructuredData data={faqSchema} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
-          { name: 'FAQ', url: `https://kanadojo.com/${locale}/faq` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
+          { name: 'FAQ', url: `https://fujilearn.com/${locale}/faq` },
         ]}
       />
 

@@ -42,10 +42,10 @@ export default async function HiraganaPracticePage({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
           {
             name: t('hiragana.title'),
-            url: `https://kanadojo.com/${locale}/hiragana-practice`,
+            url: `https://fujilearn.com/${locale}/hiragana-practice`,
           },
         ]}
       />

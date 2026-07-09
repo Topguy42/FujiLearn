@@ -11,27 +11,27 @@ export function generateStaticParams() {
 export const revalidate = 3600;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'About KanaDojo | Japanese Learning Platform';
+  const title = 'About FujiLearn | Japanese Learning Platform';
   const description =
-    'Learn about KanaDojo - a free, modern Japanese learning platform focused on making Hiragana, Katakana, Kanji, and vocabulary training effective and engaging.';
+    'Learn about FujiLearn - a free, modern Japanese learning platform focused on making Hiragana, Katakana, Kanji, and vocabulary training effective and engaging.';
 
   return {
     title,
     description,
     keywords: [
-      'about kanadojo',
+      'about fujilearn',
       'japanese learning platform',
       'learn japanese online',
       'japanese education',
       'language learning tools',
     ],
     alternates: {
-      canonical: 'https://kanadojo.com/about',
+      canonical: 'https://fujilearn.com/about',
     },
     openGraph: {
       title,
       description,
-      url: 'https://kanadojo.com/about',
+      url: 'https://fujilearn.com/about',
       type: 'website',
     },
     robots: {
@@ -45,7 +45,7 @@ export default function AboutPage() {
   return (
     <LegalLayout
       icon={<CircleHelp className='size-6' />}
-      title='About KanaDojo'
+      title='About FujiLearn'
       lastUpdated='April 8, 2026'
     >
       <p className='mb-8 text-xl text-(--secondary-color)'>
@@ -56,7 +56,7 @@ export default function AboutPage() {
         Our Mission
       </h2>
       <p className='mb-8 text-lg leading-relaxed text-(--secondary-color)'>
-        KanaDojo was created to make learning Japanese writing systems and
+        FujiLearn was created to make learning Japanese writing systems and
         vocabulary accessible, effective, and free for everyone. We believe that
         mastering Hiragana, Katakana, and Kanji shouldn&apos;t be a frustrating
         experience, but an engaging journey supported by modern technology and
@@ -163,7 +163,7 @@ export default function AboutPage() {
         Trusted Data Sources
       </h2>
       <p className='mb-4 text-(--secondary-color)'>
-        KanaDojo is built on authoritative Japanese language data maintained by
+        FujiLearn is built on authoritative Japanese language data maintained by
         experts:
       </p>
       <ul className='mb-4 list-disc space-y-2 pl-6 text-(--secondary-color)'>
@@ -192,7 +192,7 @@ export default function AboutPage() {
         Built With Modern Technology
       </h2>
       <p className='mb-4 text-(--secondary-color)'>
-        KanaDojo is built with production-grade web technologies to ensure fast
+        FujiLearn is built with production-grade web technologies to ensure fast
         performance, reliability, and a great user experience:
       </p>
       <div className='mb-12 space-y-2 text-(--secondary-color)'>
@@ -214,11 +214,11 @@ export default function AboutPage() {
         Open Source
       </h2>
       <p className='mb-4 text-(--secondary-color)'>
-        KanaDojo is open source and available on GitHub. We welcome
+        FujiLearn is open source and available on GitHub. We welcome
         contributions, feedback, and suggestions from the community.
       </p>
       <a
-        href='https://github.com/lingdojo/kanadojo'
+        href='https://github.com/lingdojo/fujilearn'
         target='_blank'
         rel='noopener noreferrer'
         className='mb-12 inline-flex items-center gap-2 rounded-lg bg-(--main-color) px-6 py-3 font-semibold text-white transition-opacity hover:opacity-90'

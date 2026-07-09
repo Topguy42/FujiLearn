@@ -66,7 +66,7 @@ export const useCustomThemeStore = create<ThemeStore>()(
       },
     }),
     {
-      name: 'kanadojo-custom-themes', // localStorage key
+      name: 'fujilearn-custom-themes', // localStorage key
       storage: createJSONStorage(() => localStorage),
       // Only persist themes
       partialize: state => ({

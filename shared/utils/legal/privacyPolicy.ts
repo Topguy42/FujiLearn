@@ -1,5 +1,5 @@
 const privacyPolicy = `
-**PikaPikaGems Pte Ltd** operates kanadojo.com (the "Site"). This Privacy Policy explains how we handle information related to your use of the Site.
+**PikaPikaGems Pte Ltd** operates fujilearn.com (the "Site"). This Privacy Policy explains how we handle information related to your use of the Site.
 
 
 ## 1. Information We Collect
@@ -94,10 +94,10 @@ We may update this Privacy Policy periodically. Changes will be posted on this p
 ## 9. Contact Information
 If you have any questions about this Privacy Policy, you can contact us at:
 
-dev@kanadojo.com
+dev@fujilearn.com
 
 
-**Thank you for using KanaDojo!** 🚀  
+**Thank you for using FujiLearn!** 🚀  
 
 `;
 

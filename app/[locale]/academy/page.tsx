@@ -33,7 +33,7 @@ export default async function AcademyPage({ params }: AcademyPageProps) {
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'KanaDojo Academy — Japanese Learning Articles',
+    name: 'FujiLearn Academy — Japanese Learning Articles',
     description:
       'A curated collection of Japanese learning guides, tutorials, and study tips covering Hiragana, Katakana, Kanji, vocabulary, grammar, and JLPT preparation.',
     numberOfItems: posts.length,
@@ -41,7 +41,7 @@ export default async function AcademyPage({ params }: AcademyPageProps) {
     itemListElement: posts.slice(0, 20).map((post, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      url: `https://kanadojo.com/academy/${post.slug}`,
+      url: `https://fujilearn.com/academy/${post.slug}`,
       name: post.title,
     })),
   };
@@ -50,14 +50,14 @@ export default async function AcademyPage({ params }: AcademyPageProps) {
   const collectionPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'KanaDojo Academy',
+    name: 'FujiLearn Academy',
     description:
       'A comprehensive collection of Japanese learning articles, tutorials, and study guides.',
-    url: 'https://kanadojo.com/academy',
+    url: 'https://fujilearn.com/academy',
     isPartOf: {
       '@type': 'WebSite',
-      name: 'KanaDojo',
-      url: 'https://kanadojo.com',
+      name: 'FujiLearn',
+      url: 'https://fujilearn.com',
     },
     about: {
       '@type': 'Thing',
@@ -71,8 +71,8 @@ export default async function AcademyPage({ params }: AcademyPageProps) {
       {/* Structured Data for SEO */}
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Academy', url: 'https://kanadojo.com/academy' },
+          { name: 'Home', url: 'https://fujilearn.com' },
+          { name: 'Academy', url: 'https://fujilearn.com/academy' },
         ]}
       />
       <StructuredData data={itemListSchema} />

@@ -17,10 +17,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  const title = 'JLPT N4 Kanji List - Complete Study Resource | KanaDojo';
+  const title = 'JLPT N4 Kanji List - Complete Study Resource | FujiLearn';
   const description =
     'Complete JLPT N4 Kanji list with all ~170 characters, meanings, and readings. Free interactive practice for JLPT N4 exam preparation. Master N4 Kanji efficiently!';
-  const canonical = `https://kanadojo.com/${locale}/jlpt/n4`;
+  const canonical = `https://fujilearn.com/${locale}/jlpt/n4`;
 
   return {
     title,
@@ -30,8 +30,8 @@ export async function generateMetadata({
     alternates: {
       canonical,
       languages: {
-        en: 'https://kanadojo.com/en/jlpt/n4',
-        es: 'https://kanadojo.com/es/jlpt/n4',
+        en: 'https://fujilearn.com/en/jlpt/n4',
+        es: 'https://fujilearn.com/es/jlpt/n4',
       },
     },
     openGraph: {
@@ -54,9 +54,9 @@ export default async function JLPTN4Page({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
-          { name: 'JLPT', url: `https://kanadojo.com/${locale}/jlpt/n4` },
-          { name: 'N4', url: `https://kanadojo.com/${locale}/jlpt/n4` },
+          { name: 'Home', url: `https://fujilearn.com/${locale}` },
+          { name: 'JLPT', url: `https://fujilearn.com/${locale}/jlpt/n4` },
+          { name: 'N4', url: `https://fujilearn.com/${locale}/jlpt/n4` },
         ]}
       />
       <div className='mx-auto max-w-4xl px-4 py-8'>
@@ -192,7 +192,7 @@ export default async function JLPTN4Page({
 
               <div className='rounded-lg bg-(--card-color) p-4'>
                 <h3 className='mb-2 font-semibold text-(--main-color)'>
-                  4️⃣ Use KanaDojo&apos;s Training Modes
+                  4️⃣ Use FujiLearn&apos;s Training Modes
                 </h3>
                 <p>
                   Vary your practice with Pick, Input, and Blitz modes for
@@ -208,7 +208,7 @@ export default async function JLPTN4Page({
               📊 Track Your N4 Progress
             </h2>
             <p className='mb-4'>
-              KanaDojo automatically tracks your progress through N4 kanji:
+              FujiLearn automatically tracks your progress through N4 kanji:
             </p>
             <ul className='mb-4 list-disc space-y-2 pl-6'>
               <li>
